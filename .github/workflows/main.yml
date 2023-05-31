@@ -30,7 +30,7 @@ jobs:
 
       - name: Run tests and coverage
         run: |
-          coverage run --source=PythonExampleProject -m pytest tests/module_test.py
+          coverage run -m pytest tests/module_test.py
           coverage xml -o coverage.xml
 
       - name: Upload coverage to CodeCov
